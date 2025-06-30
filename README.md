@@ -9,8 +9,8 @@ I'm a passionate **Frontend Software Engineer** with over 4 years of experience 
 - **Mobile** (Learning): React Native || Kotlin
 - **Design:** TailwindCSS || CSS Modules || Styled Components
 - **State Management:** Redux || Zustand
-- **APIs:** REST, GraphQL
-- **Development Practices:** CI/CD, Git, Agile (SCRUM & Kanban)
+- **APIs:** REST || GraphQL
+- **Development Practices:** CI/CD || Git || Agile (SCRUM & Kanban)
 
 ## What I do 🌍
 
