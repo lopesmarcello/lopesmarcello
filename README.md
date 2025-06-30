@@ -5,12 +5,12 @@ I'm a passionate **Frontend Software Engineer** with over 4 years of experience 
 ## Technologies & Tools 🛠️
 
 - **Languages:** JavaScript || TypeScript
-- **Frontend:** React || Next.js,
-- **Mobile** (Learning): React Native || Kotlin
+- **Frontend:** React || Next.js
 - **Design:** TailwindCSS || CSS Modules || Styled Components
 - **State Management:** Redux || Zustand
 - **APIs:** REST || GraphQL
 - **Development Practices:** CI/CD || Git || Agile (SCRUM & Kanban)
+- **Learning:** : React Native || Kotlin
 
 ## What I do 🌍
 
