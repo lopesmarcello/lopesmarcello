@@ -1,44 +1,75 @@
-# Hi there, I'm Marcello! 👨‍💻👋
+# Marcello Lopes
 
-I'm a **Software Engineer** with over **5 years** of experience in building modern, scalable web applications. While my roots are deep in the **React** and **TypeScript** ecosystem, I have expanded my expertise into **Backend Engineering** with **Go (Golang)**, focusing on high-performance APIs and distributed systems.
+**Software Engineer.** Over 5 years building web applications — deep in React and TypeScript,
+now working across the whole stack: legacy database, Spring Boot service, NestJS BFF, Nuxt host,
+React micro-frontend.
 
----
-
-### 🚀 Recent Highlights (2025-2026)
-I've been focusing on performance and developer tooling:
-- **[Vitals](https://github.com/lopesmarcello/Vitals):** A website performance tracker built with **Go** and **templ**.
-- **[fs-router-dom](https://github.com/lopesmarcello/fs-router-dom):** A lightweight file-based router for Vite + React Router DOM.
-- **Technical Leadership:** Led frontend initiatives at my previous role, driving the adoption of modern standards (React/TS), mentoring the team, and overseeing the delivery of high-impact enterprise applications.
+What I actually spend my time on: **designing AI agent architectures that survive contact with
+production.**
 
 ---
 
-### 🛠️ Technologies & Tools
+### 🤖 Agent architecture, applied
 
-| Domain | Stack |
+Most "AI in the workflow" stories are about writing code faster. Mine is about designing the
+system the agents run inside.
+
+On an enterprise authorization project, I built a set of agents with deliberate boundaries:
+
+- **Architect / executor split.** Whoever designs the authorization primitive is not whoever
+  applies it. This is not tidiness — it's what prevents a second source of permission checks
+  from appearing in the browser, which is the most expensive failure mode in this class of work.
+- **A stop protocol.** When the executor finds a contract different from what it expected, it
+  *stops and reports* instead of improvising a fix. An agent that improvises around a missing
+  piece will happily build the wrong thing correctly.
+- **An evidence protocol.** After applying a change, the agent captures proof with and without
+  permission, and a human validates before anything is committed.
+- **A versioned source of truth**, replacing an authenticated documentation lookup — with an
+  explicit precedence rule, and divergence reported for regeneration rather than patched by hand.
+- **Context cost as a design requirement.** The catalog is 5,448 lines; reading it whole would
+  cost more than the lookup it replaced. The docs specify reading only the relevant block.
+
+I also deleted a 190-line parser I had written, once the data was versioned — three lines of
+`awk` did the same job without a dependency to keep in sync. The note explaining why is in the
+repo, so nobody reintroduces it.
+
+**Delivery cadence on that front went from 1 to 8 screens per week.**
+
+<sub>Week 1 was slower because the foundation was being built alongside it — the honest
+comparison is week 2 → week 3, same foundation, 3 → 8.</sub>
+
+---
+
+### 🛠️ What I build
+
+| | |
 | :--- | :--- |
-| **Languages** | JavaScript, TypeScript, **Go**, Lua |
-| **Frontend** | React, Next.js, TailwindCSS, HTMX/Templ |
-| **Backend** | Go (Standard Lib, Chi), Node.js, Docker, PostgreSQL |
-| **Tools** | Neovim, Git, CI/CD, n8n |
+| **AI tooling** | [Syntra](https://github.com/lopesmarcello/Syntra) · [aidp](https://github.com/lopesmarcello/aidp) |
+| **Frontend** | [fs-router-dom](https://github.com/lopesmarcello/fs-router-dom) · [serena-ui](https://github.com/lopesmarcello/serena-ui) |
+| **Go & Rust** | [Vitals](https://github.com/lopesmarcello/Vitals) · [Dispatch](https://github.com/lopesmarcello/Dispatch) |
+
+`fs-router-dom` came out of real pain: a file-based router that eliminated 100% of route
+conflicts in the inspection system used daily by São Paulo's borough administrations.
 
 ---
 
-### 🧠 Current Focus: System Design & Architecture
-I am currently deepening my knowledge in **Advanced Backend** patterns and **System Design**.
-*   **Microservices & Distributed Systems:** Designing scalable architectures.
-*   **High Performance:** Optimizing Go applications and database queries.
-*   **Infrastructure:** Containerization with Docker and orchestration.
+### 🧰 Stack
+
+| Domain | |
+| :--- | :--- |
+| **Languages** | TypeScript, JavaScript, Go, Java, Lua |
+| **Frontend** | React, Next.js, Micro-frontends (since 2022), Tailwind, Nuxt |
+| **Backend** | NestJS, Spring Boot, Go, PostgreSQL, Docker |
+| **Practice** | ADRs, OpenAPI contracts, Azure DevOps, testing, agent orchestration |
 
 ---
 
-### 🌍 What I do
-I specialize in creating **full-stack solutions** that are responsive, scalable, and maintainable.
-*   Leading **technical initiatives** and providing mentorship.
-*   Contributing to **agile development** using SCRUM and Kanban.
-*   Focused on **clean code** and **SOLID principles** to ensure sustainable development.
+### 📍 Now
 
----
+Frontend engineer at **NTConsult**, on the **Vivo** account — building the authentication and
+authorization layer of a legacy-to-micro-frontend migration, from the database to the browser.
 
-### 📫 Get in touch
-*   [LinkedIn](https://www.linkedin.com/in/lopesmarcello/)
-*   [Email](mailto:marcellolopesdev@gmail.com)
+Going deeper on Go, distributed systems, and how to make agents reliable enough that someone
+else can trust their output.
+
+📫 [LinkedIn](https://www.linkedin.com/in/lopesmarcello) · marcellolopesdev@gmail.com
