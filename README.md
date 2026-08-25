@@ -1,6 +1,6 @@
 # Hi there, I'm Marcello! 👨‍💻👋
 
-I'm a **Software Engineer** with over **6 years** of experience in building modern, scalable web applications. While my roots are deep in the **React** and **TypeScript** ecosystem, I have expanded my expertise into **Backend Engineering** with **Go (Golang)**, focusing on high-performance APIs and distributed systems.
+I'm a **Software Engineer** with over **5 years** of experience in building modern, scalable web applications. While my roots are deep in the **React** and **TypeScript** ecosystem, I have expanded my expertise into **Backend Engineering** with **Go (Golang)**, focusing on high-performance APIs and distributed systems.
 
 ---
 
